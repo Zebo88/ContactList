@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import './App.css';
 import ContactList from './components/ContactList';
-import dummyContacts from './components/ContactList';
 
 function App() {
 
