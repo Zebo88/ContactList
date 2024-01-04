@@ -11,23 +11,26 @@ const dummyContacts = [
 ];
 
 export default function ContactList({ setSelectedContactId }) {
-  const [contacts, setContacts] = useState(dummyContacts);
+  // const [contacts, setContacts] = useState(dummyContacts);
+  const [contacts, setContacts] = useState([]);
+  // let ignore = false;
   useEffect(() => {
     async function fetchContacts() {
       try {
         const response = await fetch(API_URL);
         const result = await response.json();
-        console.log(result);
-
+        // console.log(result);
+          setContacts(result);
       } catch (error) {
         console.error(error);
       }
     }
-
+// if(ignore){
+//   return;
+// }
     fetchContacts();
-
-  },[]);
-  console.log("Contacts: ", contacts);
+  // return () => ignore = true;
+  },[])
 
   return (  
     <table>
