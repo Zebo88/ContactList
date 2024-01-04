@@ -46,12 +46,7 @@ export default function SelectedContact({ selectedContactId, setSelectedContactI
           </tr>
           {/* <tr>
             <td>Address:</td>
-            <td>{
-                  contact.map((info) => {
-                  return `${info.address.street}, ${info.address.city}`;
-                  })
-                }
-            </td>
+            <td>{`${contact.address.street}, ${contact.address.city}`}</td>
           </tr> */}
         </tbody>
       </table>
