@@ -13,8 +13,8 @@ export default function SelectedContact({ selectedContactId, setSelectedContactI
         const response = await fetch(`${API_URL}/${selectedContactId}`);
         const result = await response.json();
         setContact(result);
-        console.log(result);
-        console.log(contact);
+        // console.log(result);
+        // console.log(contact);
       } catch (error) {
         console.error(error);
       }
