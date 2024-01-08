@@ -41,9 +41,9 @@ export default function ContactList({ setSelectedContactId }) {
       </thead>
       <tbody>
         <tr>
-          <td>Name</td>
-          <td>Email</td>
-          <td>Phone</td>
+          <td className="col-head">Name</td>
+          <td className="col-head">Email</td>
+          <td className="col-head">Phone</td>
         </tr>
         {
           //Map over data here:
